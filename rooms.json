@@ -1,0 +1,36 @@
+[
+  { "name": "Entry", "adjacency": ["Living"], "minWidth": 4 },
+  {
+    "name": "Living",
+    "area": 2.0,
+    "adjacency": ["Entry", "Kitchen", "Hall"],
+    "square": true
+  },
+  {
+    "name": "Kitchen",
+    "area": 1.5,
+    "adjacency": ["Living", "Dining"],
+    "minWidth": 8
+  },
+  { "name": "Dining", "area": 1.2, "adjacency": ["Kitchen"], "minWidth": 8 },
+  {
+    "name": "Hall",
+    "adjacency": ["Living", "Bathroom", "Master Bed", "Bedroom 1", "Bedroom 2"],
+    "minWidth": 4
+  },
+  { "name": "Bathroom", "area": 0.8, "adjacency": ["Hall"], "minWidth": 4 },
+  {
+    "name": "Master Bed",
+    "area": 1.5,
+    "adjacency": ["Hall", "Master Bath"],
+    "square": true
+  },
+  {
+    "name": "Master Bath",
+    "area": 0.8,
+    "adjacency": ["Master Bed"],
+    "minWidth": 6
+  },
+  { "name": "Bedroom 1", "area": 1.0, "adjacency": ["Hall"], "square": true },
+  { "name": "Bedroom 2", "area": 1.0, "adjacency": ["Hall"], "square": true }
+]
